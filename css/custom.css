@@ -1,3 +1,8 @@
 header .header-content .header-content-inner p, h1 {
 color: #f05f40;
 }
+
+header .header-content .header-content-inner p, h1 {
+font-weight: bold;
+text-transform: uppercase;
+}
