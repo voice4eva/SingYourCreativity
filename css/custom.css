@@ -6,3 +6,11 @@ header .header-content .header-content-inner p, h1 {
 font-weight: bold;
 text-transform: uppercase;
 }
+
+.form-horizontal {margin: 10px 5px 0 5px;}
+
+div #msgSubmit {margin-top: 20px;}
+
+.portfolio-box {cursor: pointer;}
+
+iframe {margin: 5px;}
