@@ -51,17 +51,3 @@ function submitMSG(valid, msg){
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
-
-// switch portfolio images with video
-function switchPortfObj() {
-  //hide all videos and show all images
-  $("div[id*='pBox_alt']" ).addClass("hidden");
-  $("div[id*='pBox_main']" ).removeClass("hidden");
-  // hide the clicked image
-  $(this).addClass('hidden');
-  // set a var to pass as id of corresponding video
-  var tempId = $(this).attr('id').toString().replace("pBox_main", "#pBox_alt");
-  // show video
-  $(tempId).removeClass('hidden');
-}
-$( ".portfolio-box" ).on( "click", switchPortfObj );
