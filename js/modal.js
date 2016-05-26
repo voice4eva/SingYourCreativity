@@ -1,5 +1,5 @@
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('sycModal');
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("modal-close")[0];
@@ -8,7 +8,7 @@ var span = document.getElementsByClassName("modal-close")[0];
 span.onclick = function() {
     modal.style.display = "none";
 
-    // reset the iframe src to stop the playing video
+    // reset the iframe src to stop playing videos
     $("#ytVideoTAL").attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
     $("#ytVideoObjectives").attr('src','https://www.youtube.com/embed/sibICXCrtsM');
 
@@ -26,12 +26,15 @@ window.onclick = function(event) {
 
 }
 
-// switch modal videos
+/* ----------------------
+switch modal videos
+---------------------- */
+
 function switchVideos() {
   // hide all videos
   $("div[id*='modalVideo']").addClass('hidden');
 
-  // set modal style of display
+  // set modal style of display to block
   modal.style.display = "block";
 
   // convert item id to string
@@ -48,5 +51,28 @@ function switchVideos() {
   // show video
   $(replaceId).removeClass('hidden');
 }
-$( ".portfolio-box" ).on( "click", switchVideos );
-$( "#takeALookBtn" ).on( "click", switchVideos );
+$("div[id*='pBox']").on("click", switchVideos);
+$("#takeALookBtn" ).on("click", switchVideos);
+
+/* ----------------------
+switch modal team members
+---------------------- */
+function switchTeamMembers() {
+  // hide all member info
+  $("div[id*='modalTeamMem']").addClass('hidden');
+
+  // set modal style of display to block
+  modal.style.display = "block";
+
+  // convert item id to string
+  var tempId = $(this).attr('id').toString();
+
+  // check what item was clicked and assign the id of corresponding video
+  if (tempId.indexOf("teamMem") >= 0) {
+    var replaceId = tempId.replace("teamMem", "#modalTeamMem");
+  }
+  
+  // show memebr info
+  $(replaceId).removeClass('hidden');
+}
+$("div[id*='teamMem']").on("click", switchTeamMembers);
