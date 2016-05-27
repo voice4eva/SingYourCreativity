@@ -73,18 +73,6 @@ img.img-responsive.img-modal {
 /* Modal Content/Box */
 
 .modal-content {
-    background-color: #000;
-    margin: 10% auto;
-    /* 15% from the top and centered */
-    padding: 10px;
-    border: 1px solid #000;
-    width: 90%;
-    /* Could be more or less, depending on screen size */
-}
-
-/* Modal Content/Box Alternate */
-
-.modal-content-alternate {
     background-color: #fff;
     margin: 10% auto;
     /* 15% from the top and centered */
@@ -94,10 +82,11 @@ img.img-responsive.img-modal {
     /* Could be more or less, depending on screen size */
 }
 
+
 /* The Close Button */
 
 .modal-close {
-    color: white;
+    color: black;
     float: right;
     font-size: 20px;
     font-weight: bold;
