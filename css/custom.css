@@ -97,13 +97,13 @@ img.img-responsive.img-modal {
 /* The Close Button */
 
 .modal-close {
-    color: black;
+    color: #f05f40;
     float: right;
     font-size: 20px;
     font-weight: bold;
 }
 .modal-close:hover, .modal-close:focus {
-    color: black;
+    color: #f05f40;
     text-decoration: none;
     cursor: pointer;
 }
