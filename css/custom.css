@@ -1,132 +1,178 @@
 header .header-content .header-content-inner p, h1 {
-color: #f05f40;
+    color: #f05f40;
 }
-
 header .header-content .header-content-inner p, h1 {
-font-weight: bold;
-text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form-horizontal {
+    margin: 10px 5px 0 5px;
+}
+div #msgSubmit {
+    margin-top: 20px;
+}
+.portfolio-box {
+    cursor: pointer;
+}
+iframe {
+    margin: 5px;
+}
+ol, ul {
+    padding: 5px;
+    list-style-type: none;
 }
 
-.form-horizontal {margin: 10px 5px 0 5px;}
+/* set position for small images */
+img.img-responsive.img-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+/* modal box */
+.modal-box {
+    display: block;
+    position: relative;
+    margin: 50px auto 0;
+    max-width: 400px;
+}
 
-div #msgSubmit {margin-top: 20px;}
+@media(min-width:992px) {
+    .modal-box {
+        margin: 20px auto 0;
+    }
+}
 
-.portfolio-box {cursor: pointer;}
-
-iframe {margin: 5px;}
+.modal-box p {
+    margin-bottom: 0;
+}
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
+
 .modal-content {
     background-color: #000;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 10% auto;
+    /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #000;
-    width: 90%; /* Could be more or less, depending on screen size */
+    width: 90%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Modal Content/Box Alternate */
+
+.modal-content-alternate {
+    background-color: #fff;
+    margin: 10% auto;
+    /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 90%;
+    /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
+
 .modal-close {
     color: white;
     float: right;
     font-size: 20px;
     font-weight: bold;
 }
-
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover, .modal-close:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* Navbar Contact page */
+/* Navbar primary */
 
-.navbar-alternate {
-    border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+.navbar-primary {
+    border-color: rgba(34, 34, 34, .05);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     background-color: #f05f40;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
-
-.navbar-alternate .navbar-header .navbar-brand {
+.navbar-primary .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
-    color: rgba(255,255,255,.7);;
+    color: rgba(255, 255, 255, .7);
+    ;
 }
-
-.navbar-alternate .navbar-header .navbar-brand:hover,
-.navbar-alternate .navbar-header .navbar-brand:focus {
+.navbar-primary .navbar-header .navbar-brand:hover, .navbar-primary .navbar-header .navbar-brand:focus {
     color: #fff;
 }
-
-.navbar-alternate .nav > li>a,
-.navbar-alternate .nav>li>a:focus {
+.navbar-primary .nav > li>a, .navbar-primary .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #fff;
 }
-
-.navbar-alternate .nav > li>a:hover,
-.navbar-alternate .nav>li>a:focus:hover {
+.navbar-primary .nav > li>a:hover, .navbar-primary .nav>li>a:focus:hover {
     color: #f05f40;
 }
-
-.navbar-alternate .nav > li.active>a,
-.navbar-alternate .nav>li.active>a:focus {
+.navbar-primary .nav > li.active>a, .navbar-primary .nav>li.active>a:focus {
     color: #fff!important;
     background-color: transparent;
 }
-
-.navbar-alternate .nav > li.active>a:hover,
-.navbar-alternate .nav>li.active>a:focus:hover {
+.navbar-primary .nav > li.active>a:hover, .navbar-primary .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
-
 @media(min-width:768px) {
-    .navbar-alternate {
-        border-color: rgba(255,255,255,.3);
+    .navbar-primary {
+        border-color: rgba(255, 255, 255, .3);
     }
-
-    .navbar-alternate .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+    .navbar-primary .navbar-header .navbar-brand {
+        color: rgba(255, 255, 255, .7);
     }
-
-    .navbar-alternate .navbar-header .navbar-brand:hover,
-    .navbar-alternate .navbar-header .navbar-brand:focus {
+    .navbar-primary .navbar-header .navbar-brand:hover, .navbar-primary .navbar-header .navbar-brand:focus {
         color: #fff;
     }
-
-    .navbar-alternate .nav > li>a,
-    .navbar-alternate .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+    .navbar-primary .nav > li>a, .navbar-primary .nav>li>a:focus {
+        color: rgba(255, 255, 255, .7);
     }
-
-    .navbar-alternate .nav > li>a:hover,
-    .navbar-alternate .nav>li>a:focus:hover {
+    .navbar-primary .nav > li>a:hover, .navbar-primary .nav>li>a:focus:hover {
         color: #fff;
     }
-
-    .navbar-alternate.affix {
+    .navbar-primary.affix {
         border-color: #f05f40;
         background-color: #f05f40;
     }
+}
 
+/* Navbar Collapsed Button alternate */
+
+button.navbar-toggle.alternate.collapsed, button.navbar-toggle.alternate {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .7);
+    background-image: none;
+}
+button.navbar-toggle.alternate.collapsed span.icon-bar, button.navbar-toggle.alternate span.icon-bar {
+    background-color: rgba(255, 255, 255, .7);
 }
