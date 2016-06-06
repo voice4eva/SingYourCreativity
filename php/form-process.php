@@ -23,8 +23,7 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-
-$EmailTo = "klirowski.s@gmail.com";
+$EmailTo = "klirowski.s@gmail.com, klirowska.e@gmail.com";
 $Subject = "SYC Contact Message";
 
 // prepare email body text
