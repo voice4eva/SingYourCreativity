@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// select all divs with show-more
 	$('.show-more').each(function(event){
 		// start with char max
-		var initialMax = 230;
+		var initialMax = 240;
 		// check for text longer than textMax and apply html changes
 		if($(this).html().length > initialMax){
 			/* split text into two parts */
@@ -39,5 +39,8 @@ $(document).ready(function(){
 
 	});
 
-
+	// select all divs with show-event
+	$('.show-event').each(function(event){
+		
+	});
 });
