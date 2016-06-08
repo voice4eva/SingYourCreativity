@@ -9,8 +9,9 @@ span.onclick = function() {
     modal.style.display = "none";
 
     // reset the iframe src to stop playing videos
-    $("#ytVideoTAL").attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
-    $("#ytVideoObjectives").attr('src','https://www.youtube.com/embed/sibICXCrtsM');
+    $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
+    $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
+    $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
 
 }
 
@@ -20,8 +21,9 @@ window.onclick = function(event) {
         modal.style.display = "none";
 
         // reset the iframe src to stop the playing video
-        $("#ytVideoTAL").attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
-        $("#ytVideoObjectives").attr('src','https://www.youtube.com/embed/sibICXCrtsM');
+        $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
+        $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
+        $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
     }
 
 }
@@ -53,6 +55,7 @@ function switchVideos() {
 }
 $("div[id*='pBox']").on("click", switchVideos);
 $("#takeALookBtn" ).on("click", switchVideos);
+$("#takeALookBtnFR" ).on("click", switchVideos);
 
 /* ----------------------
 switch modal team members
@@ -71,7 +74,7 @@ function switchTeamMembers() {
   if (tempId.indexOf("teamMem") >= 0) {
     var replaceId = tempId.replace("teamMem", "#modalTeamMem");
   }
-  
+
   // show memebr info
   $(replaceId).removeClass('hidden');
 }
