@@ -34,6 +34,13 @@ img.img-responsive.img-modal {
 }
 img.pull-left{padding-right: 10px; }
 
+/* center images*/
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* modal box */
 .modal-box {
     display: block;
@@ -181,3 +188,9 @@ button.navbar-toggle.alternate.collapsed, button.navbar-toggle.alternate {
 button.navbar-toggle.alternate.collapsed span.icon-bar, button.navbar-toggle.alternate span.icon-bar {
     background-color: rgba(255, 255, 255, .7);
 }
+
+/* google map */
+#map {
+        width: 500px;
+        height: 400px;
+      }
