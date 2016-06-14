@@ -53,30 +53,30 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="enFrLink">EN/FR</i><span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="../events.html">English</a></li>
-                          <li><a href="#">Français</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="index.html#services">Services</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="index.html#portfolio">Plus d'info</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="#page-top">Événements</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="a-propos-de-nous.html">À propos de nous</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="contact.html">Contactez-nous</a>
-                  </li>
-              </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="enFrLink">EN/FR</i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../events.html">English</a></li>
+                            <li><a href="#">Français</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#portfolio">Plus d'info</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">Événements</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="a-propos-de-nous.html">À propos de nous</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="contact.html">Contactez-nous</a>
+                    </li>
+                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -99,7 +99,8 @@
                     </div>
                     <div>
                         <h4 class="text-primary"><i>Les week-ends "bien-être" avec Sing Your Creativity</i></h4>
-                        <p>Passez votre week-end dans les montagnes! Nos week-ends "bien-être" proposent toute une série d'activités conçues autour de notre atelier musique qui ne sont pas seulement destinés à stimuler votre créativité, mais aussi vous permettre de faire une pause bien méritée.
+                        <p>Passez votre week-end dans les montagnes! Nos week-ends "bien-être" proposent toute une série d'activités conçues autour de notre atelier musique qui ne sont pas seulement destinés à stimuler votre créativité, mais aussi vous permettre
+                            de faire une pause bien méritée.
                         </p>
                     </div>
                 </div>
@@ -113,7 +114,8 @@
                         <ul>
                             <li>&nbsp;9:00: Arrivée et accueil avec cafés-croissants.</li>
                             <li>10:00: Promenade en montagne avec des pauses pour la respiration et les étirement.</li>
-                            <li>12:00: Retour au chalet et repas fait maison (nous avons d'excellentes cuisinières!)</i></li>
+                            <li>12:00: Retour au chalet et repas fait maison (nous avons d'excellentes cuisinières!)</i>
+                            </li>
                             <li>13:30: Pause <i>(avec possibilité d'une pause/sieste)</i>.</li>
                             <li>14:30: SYC atelier partie 1.</li>
                             <li>16:00: Pause thé/café.</li>
@@ -136,65 +138,75 @@
                 </div>
             </div>
             <div class="row" style="margin-bottom:20px;">
-              <div class="col-lg-8 col-lg-offset-2 text-left">
-            <h4>Inscription et paiement:</h4>
-    Votre inscription sera prise en compte à réception du paiement de 170 francs, couvrant l'animation du stage et l'hébergement en pension complète sur le week-end, par transfert sur mon compte IBAN: CH87 0483 4813 8000 1 <i>(Eva Klirowska, Chemin des Semilles 23, 1870 Monthey).</i><strong> Délai du payement: 25 juin, 2016.</strong>
-    <br><br>(Vous allez recevoir de plus amples informations lors de votre inscription.)
-    </div></div>
+                <div class="col-lg-8 col-lg-offset-2 text-left">
+                    <h4>Inscription et paiement:</h4> Votre inscription sera prise en compte à réception du paiement de 170 francs, couvrant l'animation du stage et l'hébergement en pension complète sur le week-end, par transfert sur mon compte IBAN: CH87 0483 4813 8000 1 <i>(Eva Klirowska, Chemin des Semilles 23, 1870 Monthey).</i><strong> Délai du payement: 25 juin, 2016.</strong>
+                    <br>
+                    <br>(Vous allez recevoir de plus amples informations lors de votre inscription.)
+                </div>
+            </div>
         </div>
         <div class="container">
-          <div class="row">
+            <div class="row">
 
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-          <h3 class="section-heading text-primary">Localisation</h3>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="section-heading text-primary">Localisation</h3>
+                </div>
+                <div class="container" id="map" style="margin-bottom:20px;"></div>
+            </div>
         </div>
-        <div class="container" id="map" style="margin-bottom:20px;"></div></div></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 46.2370344, lng: 6.9011362},
-          zoom: 14
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
+        <script>
+            function initMap() {
+                var myLatLng = {
+                    lat: 46.227131,
+                    lng: 6.8914309
+                };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: myLatLng
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Jorat Chalet'
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
         <div class="container" style="margin-bottom:20px;">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-              <h3 class="section-heading text-primary">Photos</h3>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="section-heading text-primary">Photos</h3>
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="../img/events/chalet_vue.jpg" class="img-responsive center" alt="Chalet Vue"> </div>
+                <div class="col-lg-4"><img src="../img/events/chalet_dortoir.jpg" class="img-responsive center" alt="Chalet Dortoir"></div>
+                <div class="col-lg-4"><img src="../img/events/chalet_salle.jpg" class="img-responsive center" alt="Chalet Salle">
+
+                </div>
+
             </div>
-
-              <div class="col-lg-4">
-                  <img src="../img/events/chalet_vue.jpg" class="img-responsive center" alt="Chalet Vue">  </div>
-                  <div class="col-lg-4"><img src="../img/events/chalet_dortoir.jpg" class="img-responsive center" alt="Chalet Dortoir"></div>
-                  <div class="col-lg-4"><img src="../img/events/chalet_salle.jpg" class="img-responsive center" alt="Chalet Salle">
-
-              </div>
-
-          </div>
         </div>
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-              <h3 class="section-heading text-primary">Inscription</h3>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="section-heading text-primary">Inscription</h3>
+                </div>
             </div>
-          </div>
         </div>
         <div class="container" id="SYCEvent_regWeekend_form">
             <div class="row">
                 <form role="form" id="contactForm" data-toggle="validator" class="form-horizontal shake">
-                  <div class="form-group">
-                      <label for="message" class="col-sm-2 control-label">Date souhaitée</label>
-                      <div class="col-sm-10">
-                          <input list="event_dates" id="message" class="form-control" placeholder="23-24 juillet, 2016" required data-error="Entrez votre date souhaitée s'il vous plaît.">
-                              <datalist id="event_dates">
-                              <option value="23-24 juillet, 2016">23-24 juillet, 2016</option>
-                          </datalist>
-                          <div class="help-block with-errors"></div>
-                      </div>
-                  </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Date souhaitée</label>
+                        <div class="col-sm-10">
+                            <input list="event_dates" id="message" class="form-control" placeholder="23-24 juillet, 2016" required data-error="Entrez votre date souhaitée s'il vous plaît.">
+                            <datalist id="event_dates">
+                                <option value="23-24 juillet, 2016">23-24 juillet, 2016</option>
+                            </datalist>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">Nom complet</label>
                         <div class="col-sm-10">
@@ -203,20 +215,20 @@
                         </div>
                     </div>
                     <div class="form-group">
-                      <label for="email" class="col-sm-2 control-label">Email</label>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" placeholder="exemple@domain.com" required data-error="Entrez votre adresse e-mail s'il vous plaît.">
-                        <div class="help-block with-errors"></div>
-                      </div>
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="exemple@domain.com" required data-error="Entrez votre adresse e-mail s'il vous plaît.">
+                            <div class="help-block with-errors"></div>
+                        </div>
                     </div>
                     <div class="form-group">
-                      <!-- for human check, set value to 5 to match against, keep hidden -->
-                      <input type="text" class="hidden" id="numbermatch" value="5">
-                      <label for="humancheck" class="col-sm-2 control-label">1 + 4 = ?</label>
-                      <div class="col-sm-10">
-                        <input type="text" class="form-control" id="humancheck" placeholder="Votre réponse" required data-match="#numbermatch" data-error="Entrez un numéro s'il vous plaît." data-match-error="Vérifiez vos calculs :)">
-                        <div class="help-block with-errors"></div>
-                      </div>
+                        <!-- for human check, set value to 5 to match against, keep hidden -->
+                        <input type="text" class="hidden" id="numbermatch" value="5">
+                        <label for="humancheck" class="col-sm-2 control-label">1 + 4 = ?</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="humancheck" placeholder="Votre réponse" required data-match="#numbermatch" data-error="Entrez un numéro s'il vous plaît." data-match-error="Vérifiez vos calculs :)">
+                            <div class="help-block with-errors"></div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
@@ -243,8 +255,8 @@
                     </p>
                 </div>
                 <div class="navbar-text pull-right">
-                  <a href="https://www.facebook.com/singyourcreativity/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-                  <a href="https://www.linkedin.com/company/sing-your-creativity/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    <a href="https://www.facebook.com/singyourcreativity/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/sing-your-creativity/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
                 </div>
             </div>
         </div>
