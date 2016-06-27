@@ -79,3 +79,26 @@ function switchTeamMembers() {
   $(replaceId).removeClass('hidden');
 }
 $("div[id*='teamMem']").on("click", switchTeamMembers);
+
+/* ----------------------
+switch images in gallary
+---------------------- */
+function switchGalleyImages() {
+  // hide all member info
+  $("div[id*='modalGalleryImg']").addClass('hidden');
+
+  // set modal style of display to block
+  modal.style.display = "block";
+
+  // convert item id to string
+  var tempId = $(this).attr('id').toString();
+
+  // check what item was clicked and assign the id of corresponding video
+  if (tempId.indexOf("galleryImg") >= 0) {
+    var replaceId = tempId.replace("galleryImg", "#modalGalleryImg");
+  }
+
+  // show memebr info
+  $(replaceId).removeClass('hidden');
+}
+$("img[id*='galleryImg']").on("click", switchGalleyImages);
