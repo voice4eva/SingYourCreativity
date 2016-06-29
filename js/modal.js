@@ -12,7 +12,10 @@ span.onclick = function() {
     $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
     $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
     $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
-
+    $("#modalVideoSYCSessionMontheyEN").children().attr('src','https://www.youtube.com/embed/H7ZWpCYm9kk');
+    $("#modalVideoSYCSessionMorginsEN").children().attr('src','https://www.youtube.com/embed/7JIPQg8iBcM');
+    $("#modalVideoSYCSessionMontheyFR").children().attr('src','https://www.youtube.com/embed/T-1ykui5Z3E');
+    $("#modalVideoSYCSessionMorginsFR").children().attr('src','https://www.youtube.com/embed/Gh1dKyGYpuI');
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -24,6 +27,10 @@ window.onclick = function(event) {
         $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
         $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
         $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
+        $("#modalVideoSYCSessionMontheyEN").children().attr('src','https://www.youtube.com/embed/H7ZWpCYm9kk');
+        $("#modalVideoSYCSessionMorginsEN").children().attr('src','https://www.youtube.com/embed/7JIPQg8iBcM');
+        $("#modalVideoSYCSessionMontheyFR").children().attr('src','https://www.youtube.com/embed/T-1ykui5Z3E');
+        $("#modalVideoSYCSessionMorginsFR").children().attr('src','https://www.youtube.com/embed/Gh1dKyGYpuI');
     }
 
 }
@@ -81,7 +88,7 @@ function switchTeamMembers() {
 $("div[id*='teamMem']").on("click", switchTeamMembers);
 
 /* ----------------------
-switch images in gallary
+switch images in gallery
 ---------------------- */
 function switchGalleyImages() {
   // hide all member info
