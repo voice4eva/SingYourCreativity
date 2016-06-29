@@ -42,7 +42,8 @@ switch modal videos
 function switchVideos() {
   // hide all videos
   $("div[id*='modalVideo']").addClass('hidden');
-
+  // hide all images
+  $("div[id*='modalGalleryImg']").addClass('hidden');
   // set modal style of display to block
   modal.style.display = "block";
 
@@ -90,8 +91,10 @@ $("div[id*='teamMem']").on("click", switchTeamMembers);
 /* ----------------------
 switch images in gallery
 ---------------------- */
-function switchGalleyImages() {
-  // hide all member info
+function switchGalleryImages() {
+  // hide all videos
+  $("div[id*='modalVideo']").addClass('hidden');
+  // hide all images
   $("div[id*='modalGalleryImg']").addClass('hidden');
 
   // set modal style of display to block
@@ -108,4 +111,4 @@ function switchGalleyImages() {
   // show memebr info
   $(replaceId).removeClass('hidden');
 }
-$("img[id*='galleryImg']").on("click", switchGalleyImages);
+$("img[id*='galleryImg']").on("click", switchGalleryImages);

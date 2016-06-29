@@ -26,35 +26,38 @@ ol, ul {
 }
 
 /* set position for small images */
+
 img.img-responsive.img-modal {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
 }
-img.pull-left{padding-right: 10px; }
+img.pull-left {
+    padding-right: 10px;
+}
 
 /* center images*/
+
 img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* modal box */
+
 .modal-box {
     display: block;
     position: relative;
     margin: 50px auto 0;
     max-width: 400px;
 }
-
 @media(min-width:992px) {
     .modal-box {
         margin: 20px auto 0;
     }
 }
-
 .modal-box p {
     margin-bottom: 0;
 }
@@ -140,20 +143,20 @@ img.center {
 .navbar-primary .navbar-header .navbar-brand:hover, .navbar-primary .navbar-header .navbar-brand:focus {
     color: #fff;
 }
-.navbar-primary .nav > li>a, .navbar-primary .nav>li>a:focus {
+.navbar-primary .nav> li>a, .navbar-primary .nav>li>a:focus {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
     color: #fff;
 }
-.navbar-primary .nav > li>a:hover, .navbar-primary .nav>li>a:focus:hover {
+.navbar-primary .nav> li>a:hover, .navbar-primary .nav>li>a:focus:hover {
     color: #f05f40;
 }
-.navbar-primary .nav > li.active>a, .navbar-primary .nav>li.active>a:focus {
+.navbar-primary .nav> li.active>a, .navbar-primary .nav>li.active>a:focus {
     color: #fff!important;
     background-color: transparent;
 }
-.navbar-primary .nav > li.active>a:hover, .navbar-primary .nav>li.active>a:focus:hover {
+.navbar-primary .nav> li.active>a:hover, .navbar-primary .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
 @media(min-width:768px) {
@@ -166,10 +169,10 @@ img.center {
     .navbar-primary .navbar-header .navbar-brand:hover, .navbar-primary .navbar-header .navbar-brand:focus {
         color: #fff;
     }
-    .navbar-primary .nav > li>a, .navbar-primary .nav>li>a:focus {
+    .navbar-primary .nav> li>a, .navbar-primary .nav>li>a:focus {
         color: rgba(255, 255, 255, .7);
     }
-    .navbar-primary .nav > li>a:hover, .navbar-primary .nav>li>a:focus:hover {
+    .navbar-primary .nav> li>a:hover, .navbar-primary .nav>li>a:focus:hover {
         color: #fff;
     }
     .navbar-primary.affix {
@@ -190,7 +193,30 @@ button.navbar-toggle.alternate.collapsed span.icon-bar, button.navbar-toggle.alt
 }
 
 /* google map */
+
 #map {
-        width: 500px;
-        height: 400px;
-      }
+    width: 500px;
+    height: 400px;
+}
+
+/* pic animation */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.tilt:hover {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
