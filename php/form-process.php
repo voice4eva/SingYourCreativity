@@ -16,6 +16,10 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
+// PHONE
+$phone = $_POST["phone"];
+
+
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
@@ -33,6 +37,9 @@ $Body .= $name;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
+$Body .= "\n";
+$Body .= "Phone: ";
+$Body .= $phone;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
