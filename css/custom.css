@@ -181,6 +181,19 @@ img.center {
     }
 }
 
+/* default setting navbar links */
+@media (min-width: 768px){
+.navbar-default .nav > li>a, .navbar-default .nav>li>a:focus {
+    color: #f05f40;
+  }
+}
+
+@media (min-width: 768px){
+.navbar-default .navbar-header .navbar-brand {
+    color: #f05f40;
+  }
+}
+
 /* Navbar Collapsed Button alternate */
 
 button.navbar-toggle.alternate.collapsed, button.navbar-toggle.alternate {
