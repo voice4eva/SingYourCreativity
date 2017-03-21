@@ -56,7 +56,7 @@ function submitMSG(valid, msg){
 // Show Datepicker
 $( function() {
   $( "select" ).change(function() {
-    if ($(this).val() == "weekeendsbienetre"){
+    if ($(this).val() == "WeekeendsBienEtre"){
       $("#dateDiv").removeClass("hidden");
     }
     else{
