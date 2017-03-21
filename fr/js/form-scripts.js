@@ -61,7 +61,7 @@ $( function() {
         }});
   // show datapicker per list selection
   $( "select" ).change(function() {
-    if ($(this).val() == "WeekeendsBienEtre"){
+    if ($(this).val() == "ChanterBienEtre_Mercredis"){
       $("#dateDiv").removeClass("hidden");
     }
     else{

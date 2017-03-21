@@ -14,13 +14,14 @@ $("#contactForm").validator().on("submit", function (event) {
 function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
+    var date = $("#datepicker").val();
     var email = $("#email").val();
     var message = $("#message").val();
 
     $.ajax({
         type: "POST",
         url: "../php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
+        data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){
                 formSuccess();
@@ -51,3 +52,20 @@ function submitMSG(valid, msg){
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
+
+/* Datepicker */
+$( function() {
+  // Set only wednesdays to be selectable
+  $("#datepicker").datepicker({beforeShowDay: function(date){
+          return [date.getDay() == 3, ''];
+        }});
+  // show datapicker per list selection
+  $( "select" ).change(function() {
+    if ($(this).val() == "SingWellBeing_Weds"){
+      $("#dateDiv").removeClass("hidden");
+    }
+    else{
+      $("#dateDiv").addClass("hidden");
+    }
+  });
+});
