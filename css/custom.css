@@ -233,3 +233,8 @@ button.navbar-toggle.alternate.collapsed span.icon-bar, button.navbar-toggle.alt
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
 }
+
+/* datepicker background */
+div[class^="ui-datepicker"]{
+    background-color:#fff;
+}

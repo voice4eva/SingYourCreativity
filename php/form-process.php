@@ -9,6 +9,10 @@ if (empty($_POST["name"])) {
     $name = $_POST["name"];
 }
 
+// DATE
+$date = $_POST["date"];
+
+
 // EMAIL
 if (empty($_POST["email"])) {
     $errorMSG .= "Email is required ";
@@ -34,6 +38,9 @@ $Subject = "SYC Contact Message";
 $Body = "";
 $Body .= "Name: ";
 $Body .= $name;
+$Body .= "\n";
+$Body .= "Date: ";
+$Body .= $date;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
