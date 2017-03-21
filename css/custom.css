@@ -235,6 +235,7 @@ button.navbar-toggle.alternate.collapsed span.icon-bar, button.navbar-toggle.alt
 }
 
 /* datepicker background */
-div[class^="ui-datepicker"], div[class*="ui-datepicker"] {
+/*div[class^="ui-datepicker"], div[class*="ui-datepicker"] {
     background-color:#fff;
-}
+}*/
+#ui-datepicker-div {background-color:#fff;}
