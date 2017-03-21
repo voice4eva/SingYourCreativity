@@ -212,9 +212,6 @@ button.navbar-toggle.alternate.collapsed span.icon-bar, button.navbar-toggle.alt
     height: 400px;
 }
 /* datepicker background */
-/*div[class^="ui-datepicker"], div[class*="ui-datepicker"] {
-    background-color:#fff;
-}*/
 div#ui-datepicker-div {background:#FFFFFF;display: block;}
 
 /* pic animation */

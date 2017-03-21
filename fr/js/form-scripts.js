@@ -53,8 +53,13 @@ function submitMSG(valid, msg){
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
 
-// Show Datepicker
+/* Datepicker */
 $( function() {
+  // Set only wednesdays to be selectable
+  $("#datepicker").datepicker({beforeShowDay: function(date){
+          return [date.getDay() == 3, ''];
+        }});
+  // show datapicker per list selection
   $( "select" ).change(function() {
     if ($(this).val() == "WeekeendsBienEtre"){
       $("#dateDiv").removeClass("hidden");

@@ -243,7 +243,6 @@
                     <div class="form-group">
                         <label for="message" class="col-sm-2 control-label">Événement</label>
                         <div class="col-sm-10">
-                            <!-- <input list="event" id="message" class="form-control" placeholder="Les week-ends bien-être avec Sing Your Creativity" required data-error="Entrez votre événement souhaitée s'il vous plaît."> -->
                             <select id="message" name="event" form="contactForm" class="form-control" placeholder="Les week-ends bien-être avec Sing Your Creativity" required data-error="Entrez votre événement souhaitée s'il vous plaît.">
                               <option value=""></option>
                               <option value="WeekeendsBienEtre">Les week-ends bien-être avec SYC</option>
@@ -254,15 +253,6 @@
                               <option value="chanterbienetre5">Chanter pour son bien-etre (15 mai, 2017)</option>
                               <option value="chanterbienetre6">Chanter pour son bien-etre (12 juin, 2017)</option>
                             </select>
-                            <!-- <datalist id="event">
-                                <option value="Les week-ends bien-être avec SYC">Les week-ends bien-être avec SYC</option>
-                                <option value="Chanter pour son bien-etre (20 March, 2017)">Chanter pour son bien-etre (20 March, 2017)</option>
-                                <option value="Chanter pour son bien-etre (3 April, 2017)">Chanter pour son bien-etre (3 April, 2017)</option>
-                                <option value="Chanter pour son bien-etre (17 April, 2017)">Chanter pour son bien-etre (17 April, 2017)</option>
-                                <option value="Chanter pour son bien-etre (1 May, 2017)">Chanter pour son bien-etre (1 May, 2017)</option>
-                                <option value="Chanter pour son bien-etre (15 May, 2017)">Chanter pour son bien-etre (15 May, 2017)</option>
-                                <option value="Chanter pour son bien-etre (12 June, 2017)">Chanter pour son bien-etre (12 June, 2017)</option>
-                            </datalist> -->
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -336,6 +326,7 @@
     <!-- Plugin JavaScript -->
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/jquery.fittext.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/wow.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
@@ -350,15 +341,9 @@
     <!-- Show more text function -->
     <script src="../js/showText.js"></script>
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Datapicker localization -->
     <script src="js/datepicker-fr.js"></script>
-    <script>
-    $( function() {
-      $("#datepicker").datepicker({beforeShowDay: function(date){
-              return [date.getDay() == 3, ''];
-            }});
-    } );
-    </script>
+
 
 </body>
 
