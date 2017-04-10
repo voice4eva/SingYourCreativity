@@ -56,16 +56,28 @@ function submitMSG(valid, msg){
 /* Datepicker */
 $( function() {
   // Set only wednesdays to be selectable
+  // $("#datepicker").datepicker({beforeShowDay: function(date){
+  //         return [date.getDay() == 3, ''];
+  // }});
+  var daysToDisable = [0, 2, 4, 5, 6, 7];
+
   $("#datepicker").datepicker({beforeShowDay: function(date){
-          return [date.getDay() == 3, ''];
-        }});
+    var day = date.getDay();
+    for (i = 0; i < daysToDisable.length; i++) {
+        if ($.inArray(day, daysToDisable) != -1) {
+            return [false];
+        }
+    }
+    return [true];
+  }});
+
   // show datapicker per list selection
-  $( "select" ).change(function() {
-    if ($(this).val() == "SingWellBeing_Weds"){
-      $("#dateDiv").removeClass("hidden");
-    }
-    else{
-      $("#dateDiv").addClass("hidden");
-    }
-  });
+  // $( "select" ).change(function() {
+  //   if ($(this).val() == "SingWellBeing_Weds"){
+  //     $("#dateDiv").removeClass("hidden");
+  //   }
+  //   else{
+  //     $("#dateDiv").addClass("hidden");
+  //   }
+  // });
 });
