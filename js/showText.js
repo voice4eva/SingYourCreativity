@@ -41,6 +41,6 @@ $(document).ready(function(){
 
 	// select all divs with show-event
 	$('.show-event').each(function(event){
-		
+
 	});
 });

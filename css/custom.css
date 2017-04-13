@@ -235,3 +235,11 @@ div#ui-datepicker-div {background:#FFFFFF;display: block;}
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
 }
+
+/* carousel */
+.carousel-indicators li {
+    display: none;
+}
+.carousel-indicators .active {
+    display: none;
+}

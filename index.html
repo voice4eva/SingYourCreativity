@@ -136,6 +136,10 @@
                     </div>
                 </div>
                 <!-- Structure text TEMP -->
+                <div class="embed-responsive embed-responsive-16by9 hidden" id="modalVideoStructure">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F0_XxqxwDeY" id="ytVideoStructure" allowfullscreen></iframe>
+                </div>
+                <!-- TO IMPLEMENT: choice between text and video, when clicking on doodle
                 <div class="hidden" id="modalVideoStructure">
                     <div class="text-center">
                         <h4>Structure</h4>
@@ -163,7 +167,7 @@
                         people are often a little anxious or tired at the beginning of a singing session, and their voices sound a bit rusty. When the session ends, they are all energized and relaxed, their voices resonate and they all tend to smile more.
                         These are perfect conditions for bonding.
                     </div>
-                </div>
+                </div> -->
         </div>
     </div>
 
@@ -229,7 +233,8 @@
         </div>
     </section>
     <section class="no-padding" id="portfolio">
-        <h2 class="section-heading" style="text-align: center">Learn more</h2>
+        <h2 class="section-heading text-center">Learn more</h2>
+        <h4 class="text-center">(by clicking on a picture)</h4>
         <hr class="primary">
         <div class="container-fluid">
             <div class="row no-gutter">
@@ -277,114 +282,103 @@
         </div>
     </section>
     <section id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What our participants say</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Claude</strong>
-                        <br><i class="text-primary">Aroma Therapist</i>
-                        <p class="text-muted">“Eva, thank you for this beautiful discovery and time shared together. Your approach to singing is amazing and I look forward to the opportunity of participating in your next workshop!”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Delmina</strong>
-                        <br><i class="text-primary">Homemaker</i>
-                        <p class="text-muted">“Having never sung, I was very skeptical before attending Eva’s workshop. But it was absolute happiness! Thank you!”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Isa</strong>
-                        <br><i class="text-primary">Music Initiation Teacher</i>
-                        <p class="text-muted">"I have enjoyed these workshops because singing and body percussion is a great combination that makes one's body work in an interesting way. I liked meeting new people and the connection that formed between us at the workshop.
-                            Thank you for the good times!"
-                            <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">What our participants say</h2>
+                  <hr class="primary">
+              </div>
+          </div>
+      </div>
+      <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+              <li data-target="#myCarousel" data-slide-to="6"></li>
+              <li data-target="#myCarousel" data-slide-to="7"></li>
+              <li data-target="#myCarousel" data-slide-to="8"></li>
+              <li data-target="#myCarousel" data-slide-to="9"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner text-center" role="listbox">
 
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Amanda</strong>
-                        <br><i class="text-primary">Real Estate Manager</i>
-                        <p class="text-muted">“I have observed that as we kept singing together, the involvement, joy and boldness were increasing. Each participant was becoming more and more expressive and confident. It was also interesting to focus on singing in canon, not
-                            having to think about anything else than the song. Singing in the group created a joyful energy; it was nice to hear different voices unite. I think that such a workshop should last at least two hours. I enjoyed the smile of
-                            the facilitator of the workshop whose attitude was lively and exciting.”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Livia</strong>
-                        <br><i class="text-primary">Marketing Representative</i>
-                        <p class="text-muted">“I found this experience truly rewarding in different aspects, from a strictly musical point of view and from the personal one! A moment of sharing pure happiness! Naturally de-stressing!”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Florence</strong>
-                        <br><i class="text-primary">Primary School Teacher</i>
-                        <p class="text-muted">“If I had to define Eva’s workshop, I would say, accessible, creative, professional. Ideal for a pleasant musical moment.”
-                            <br>
-                        </p>
-                    </div>
-                </div>
+              <div class="item active col-lg-8 col-lg-offset-2">
+                <strong>Claude</strong>
+                <br><i class="text-primary">Aroma Therapist</i>
+                <p class="text-muted">“Eva, thank you for this beautiful discovery and time shared together. Your approach to singing is amazing and I look forward to the opportunity of participating in your next workshop!”
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                    <strong>Delmina</strong>
+                    <br><i class="text-primary">Homemaker</i>
+                    <p class="text-muted">“Having never sung, I was very skeptical before attending Eva’s workshop. But it was absolute happiness! Thank you!”
+                        <br>
+                    </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Isa</strong>
+                <br><i class="text-primary">Music Initiation Teacher</i>
+                <p class="text-muted">"I have enjoyed these workshops because singing and body percussion is a great combination that makes one's body work in an interesting way. I liked meeting new people and the connection that formed between us at the workshop.
+                    Thank you for the good times!"
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Amanda</strong>
+                <br><i class="text-primary">Real Estate Manager</i>
+                <p class="text-muted">“I have observed that as we kept singing together, the involvement, joy and boldness were increasing. Each participant was becoming more and more expressive and confident. It was also interesting to focus on singing in canon, not
+                    having to think about anything else than the song. Singing in the group created a joyful energy; it was nice to hear different voices unite. I think that such a workshop should last at least two hours. I enjoyed the smile of
+                    the facilitator of the workshop whose attitude was lively and exciting.”
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Livia</strong>
+                <br><i class="text-primary">Marketing Representative</i>
+                <p class="text-muted">“I found this experience truly rewarding in different aspects, from a strictly musical point of view and from the personal one! A moment of sharing pure happiness! Naturally de-stressing!”
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Florence</strong>
+                <br><i class="text-primary">Primary School Teacher</i>
+                <p class="text-muted">“If I had to define Eva’s workshop, I would say, accessible, creative, professional. Ideal for a pleasant musical moment.”
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Marie-Noëlle</strong>
+                <br><i class="text-primary">Medical Assistant</i>
+                <p class="text-muted">“Friendly time with people united by the same passion for music, indulged in what moves us most. Eva, thank you for your enthusiasm!”
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Marc</strong>
+                <br><i class="text-primary">CEO</i>
+                <p class="text-muted">“Unexpected surprise evening where I was invited recently. From the outset Eva puts us at ease by briefly explaining the purpose of the workshop and starts the session. The exercises succeed all more fun and interesting. Attention
+                    and interest never fall. The energy and enthusiasm of Eva is communicative. Adept of music and choral singing - sources of happiness and powerful alternative to psychotherapies – I strongly recommend Eva’s initiative!”
+                </p>
+              </div>
+              <div class="item col-lg-8 col-lg-offset-2">
+                <strong>Josiane</strong>
+                <br><i class="text-primary">Retired Cook</i>
+                <p class="text-muted">“Thank you for this discovery ... I loved it! ... During the workshop I found in me my inner child and my tribal creativity. My body transformed into a musical instrument with my voice singing, my feet dancing and my hands playing
+                    the rhythm. Carried away by the joy and enthusiasm of the group, I forgot fatigue and pain. When is the next one?”
+                  </p>
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Marie-Noëlle</strong>
-                        <br><i class="text-primary">Medical Assistant</i>
-                        <p class="text-muted">“Friendly time with people united by the same passion for music, indulged in what moves us most. Eva, thank you for your enthusiasm!”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Marc</strong>
-                        <br><i class="text-primary">CEO</i>
-                        <p class="text-muted">“Unexpected surprise evening where I was invited recently. From the outset Eva puts us at ease by briefly explaining the purpose of the workshop and starts the session. The exercises succeed all more fun and interesting. Attention
-                            and interest never fall. The energy and enthusiasm of Eva is communicative. Adept of music and choral singing - sources of happiness and powerful alternative to psychotherapies – I strongly recommend Eva’s initiative!”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box show-more">
-                        <strong>Josiane</strong>
-                        <br><i class="text-primary">Retired Cook</i>
-                        <p class="text-muted">“Thank you for this discovery ... I loved it! ... During the workshop I found in me my inner child and my tribal creativity. My body transformed into a musical instrument with my voice singing, my feet dancing and my hands playing
-                            the rhythm. Carried away by the joy and enthusiasm of the group, I forgot fatigue and pain. When is the next one?”
-                            <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
     </section>
 <!-- TEMP, uncomment when brochure is ready
     <aside class="bg-dark">
@@ -453,9 +447,6 @@
 
     <!-- Custom Modal -->
     <script src="js/modal.js"></script>
-
-    <!-- Show more text function -->
-    <script src="js/showText.js"></script>
 
 </body>
 

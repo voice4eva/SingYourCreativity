@@ -4,35 +4,29 @@ var modal = document.getElementById('sycModal');
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("modal-close")[0];
 
+// reset iframe src to stop playing videos function
+function resetIframe() {
+  $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
+  $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
+  $("#modalVideoStructure").children().attr('src','https://www.youtube.com/embed/F0_XxqxwDeY');
+  $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
+  $("#modalVideoSYCSessionMontheyEN").children().attr('src','https://www.youtube.com/embed/H7ZWpCYm9kk');
+  $("#modalVideoSYCSessionMorginsEN").children().attr('src','https://www.youtube.com/embed/7JIPQg8iBcM');
+  $("#modalVideoSYCSessionMontheyFR").children().attr('src','https://www.youtube.com/embed/T-1ykui5Z3E');
+  $("#modalVideoSYCSessionMorginsFR").children().attr('src','https://www.youtube.com/embed/Gh1dKyGYpuI');
+}
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
-
-    // reset the iframe src to stop playing videos
-    $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
-    $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
-    $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
-    $("#modalVideoSYCSessionMontheyEN").children().attr('src','https://www.youtube.com/embed/H7ZWpCYm9kk');
-    $("#modalVideoSYCSessionMorginsEN").children().attr('src','https://www.youtube.com/embed/7JIPQg8iBcM');
-    $("#modalVideoSYCSessionMontheyFR").children().attr('src','https://www.youtube.com/embed/T-1ykui5Z3E');
-    $("#modalVideoSYCSessionMorginsFR").children().attr('src','https://www.youtube.com/embed/Gh1dKyGYpuI');
+    resetIframe();
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-
-        // reset the iframe src to stop the playing video
-        $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
-        $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
-        $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
-        $("#modalVideoSYCSessionMontheyEN").children().attr('src','https://www.youtube.com/embed/H7ZWpCYm9kk');
-        $("#modalVideoSYCSessionMorginsEN").children().attr('src','https://www.youtube.com/embed/7JIPQg8iBcM');
-        $("#modalVideoSYCSessionMontheyFR").children().attr('src','https://www.youtube.com/embed/T-1ykui5Z3E');
-        $("#modalVideoSYCSessionMorginsFR").children().attr('src','https://www.youtube.com/embed/Gh1dKyGYpuI');
+        resetIframe();
     }
-
 }
 
 /* ----------------------
