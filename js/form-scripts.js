@@ -60,8 +60,9 @@ $( function() {
   //         return [date.getDay() == 3, ''];
   // }});
   var daysToDisable = [0, 2, 4, 5, 6, 7];
+  var $j = jQuery.noConflict();
 
-  $("#datepicker").datepicker({beforeShowDay: function(date){
+  $j("#datepicker").datepicker({beforeShowDay: function(date){
     var day = date.getDay();
     for (i = 0; i < daysToDisable.length; i++) {
         if ($.inArray(day, daysToDisable) != -1) {
