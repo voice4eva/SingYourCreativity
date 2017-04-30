@@ -1,4 +1,5 @@
-$("#contactForm").validator().on("submit", function (event) {
+(function($) {
+  $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
@@ -60,9 +61,8 @@ $( function() {
   //         return [date.getDay() == 3, ''];
   // }});
   var daysToDisable = [0, 2, 4, 5, 6, 7];
-  var $j = jQuery.noConflict();
 
-  $j("#datepicker").datepicker({beforeShowDay: function(date){
+  $("#datepicker").datepicker({beforeShowDay: function(date){
     var day = date.getDay();
     for (i = 0; i < daysToDisable.length; i++) {
         if ($.inArray(day, daysToDisable) != -1) {
@@ -82,3 +82,4 @@ $( function() {
   //   }
   // });
 });
+ })(jQuery);
