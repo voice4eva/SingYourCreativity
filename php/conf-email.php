@@ -1,6 +1,6 @@
 <?php
 
- $fromEMAIL = "northeasternhusky@yahoo.com";
+ $fromEMAIL = "info@singyourcreativity.com";
 
  // fields
  $name = $_POST["name"];
