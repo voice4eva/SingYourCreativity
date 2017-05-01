@@ -15,7 +15,7 @@
  $Body = "Dear ";
  $Body .= $name;
  $Body .= "\n";
- $Body .= "Thank you for registering for SYC event. This is confirmation for the following date: ";
+ $Body .= "Thank you for registering for a SYC event. You are confirmed for the following date: ";
  $Body .= $date;
  $Body .= "\n";
  $Body .= "Additional Information:";
@@ -23,12 +23,12 @@
  $Body .= "Email: ";
  $Body .= $email;
  $Body .= "\n";
- $Body .= "Message: ";
+ $Body .= "Event: ";
  $Body .= $message;
  $Body .= "\n";
  $Body .= "Sincerely,";
  $Body .= "\n";
- $Body .= "Sing Your Creativity";
+ $Body .= "www.singyourcreativity.com";
 
  // send email
  $success = mail($email, $Subject, $Body, "From:".$fromEMAIL);

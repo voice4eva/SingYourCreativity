@@ -57,18 +57,10 @@
     }
 
     function sendConfEmail(name, date, email, message){
-      console.log(name + " " + date + " " + " " + email +" "+ message);
       $.ajax({
           type: "POST",
           url: "../php/conf-email.php",
-          data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message,
-          success: function(text) {
-              if (text == "pass") {
-                  console.log("email send succeeded");
-              } else {
-                  console.log("email send failed");
-              }
-          }
+          data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message
       });
     }
 
