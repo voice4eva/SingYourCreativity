@@ -18,7 +18,7 @@
  $Body .= "Thank you for registering for SYC event. This is confirmation for the following date: ";
  $Body .= $date;
  $Body .= "\n";
- $Body .= "Additional Information:"
+ $Body .= "Additional Information:";
  $Body .= "\n";
  $Body .= "Email: ";
  $Body .= $email;
