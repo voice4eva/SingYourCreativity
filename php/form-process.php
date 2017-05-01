@@ -1,6 +1,7 @@
 <?php
 
 $errorMSG = "";
+$fromEMAIL = "klirowski.s@gmail.com";
 
 // NAME
 if (empty($_POST["name"])) {
@@ -53,7 +54,7 @@ $Body .= $message;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body, "From:".$fromEMAIL);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
