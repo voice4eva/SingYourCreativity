@@ -57,6 +57,7 @@
     }
 
     function sendConfEmail(name, date, email, message){
+      console.log(name + " " + date + " " + " " + email +" "+ message);
       $.ajax({
           type: "POST",
           url: "../php/conf-email.php",
