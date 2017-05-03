@@ -15,7 +15,7 @@
  $body .= ",</p>
  <p>Thank you for contacting Sing Your Creativity. We will be in touch with you shortly.</p>
  <p><strong>Your Contact Info & Message</strong>
-     <br />Name : ";
+     <br />Name: ";
  $body .= $name;
  $body .= "<br />Message: ";
  $body .= $message;
