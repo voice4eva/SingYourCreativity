@@ -21,7 +21,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "fr/php/form-process-fr.php",
+        url: "php/form-process-fr.php",
         data: "message=" + message + "&name=" + name + "&date=" + date + "&email=" + email + "&phone=" + phone,
         success : function(text){
             if (text == "passed"){
