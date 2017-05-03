@@ -58,7 +58,7 @@ function submitMSG(valid, msg){
 function sendConfEmail(name, date, email, message, phone){
   $.ajax({
       type: "POST",
-      url: "fr/php/registration-conf-email-fr.php",
+      url: "php/registration-conf-email-fr.php",
       data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message + "&phone=" + phone
   });
 }
