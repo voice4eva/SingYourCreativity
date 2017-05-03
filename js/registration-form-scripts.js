@@ -39,7 +39,7 @@
 
     function formSuccess() {
         $("#eventRegForm")[0].reset();
-        submitMSG(true, "Thank you. We sent a confirmation to your email address. (Check the spam folder is you don't see it in your inbox)");
+        submitMSG(true, "Thank you. We sent a confirmation to your email address. (Check the spam folder if you don't see it in your inbox)");
     }
 
     function formError() {
