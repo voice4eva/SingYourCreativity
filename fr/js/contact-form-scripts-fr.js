@@ -20,7 +20,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "fr/php/form-process-fr.php",
+        url: "php/form-process-fr.php",
         data: "message=" + message + "&name=" + name + "&email=" + email + "&phone=" + phone,
         success : function(text){
             if (text == "passed"){
@@ -57,7 +57,7 @@ function submitMSG(valid, msg){
 function sendConfEmail(message, name, email, phone){
   $.ajax({
       type: "POST",
-      url: "fr/php/contact-conf-email-fr.php",
+      url: "php/contact-conf-email-fr.php",
       data: "message=" + message + "&name=" + name + "&email=" + email + "&phone=" + phone
   });
 }
