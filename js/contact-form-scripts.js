@@ -12,22 +12,21 @@
         }
     });
 
-
     function submitForm() {
         // Initiate Variables With Form Content
-        var name = $("#name").val();
-        var date = $("#datepicker").val();
-        var email = $("#email").val();
         var message = $("#message").val();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var phone = $("#phone").val();
 
         $.ajax({
             type: "POST",
             url: "../php/form-process.php",
-            data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message,
+            data: "message=" + message + "&name=" + name + "&email=" + email + "&phone=" + phone,
             success: function(text) {
                 if (text == "success") {
                     formSuccess();
-                    sendConfEmail(name, date, email, message);
+                    sendConfEmail(message, name, email, phone);
                 } else {
                     formError();
                     submitMSG(false, text);
@@ -38,7 +37,7 @@
 
     function formSuccess() {
         $("#contactForm")[0].reset();
-        submitMSG(true, "Your message has been submitted! Thank you. We will be touch shortly.")
+        submitMSG(true, "Thank you for your message. We sent a confirmation to your email address. (Check the spam folder is you don't see it in your inbox)");
     }
 
     function formError() {
@@ -49,36 +48,19 @@
 
     function submitMSG(valid, msg) {
         if (valid) {
-            var msgClasses = "alert alert-success text-center tada animated col-sm-10 col-sm-offset-2";
+            var msgClasses = "alert alert-success text-center col-sm-10 col-sm-offset-2";
         } else {
-            var msgClasses = "alert alert-danger text-center tada animated col-sm-10 col-sm-offset-2";
+            var msgClasses = "alert alert-danger text-center col-sm-10 col-sm-offset-2";
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
 
-    function sendConfEmail(name, date, email, message){
+    function sendConfEmail(message, name, email, phone){
       $.ajax({
           type: "POST",
-          url: "../php/conf-email.php",
-          data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message
+          url: "../php/contact-conf-email.php",
+          data: "message=" + message + "&name=" + name + "&email=" + email + "&phone=" + phone
       });
     }
 
-    /* Datepicker */
-    $(function() {
-
-        var daysToDisable = [0, 1, 2, 4, 5, 6, 7];
-
-        $("#datepicker").datepicker({
-            beforeShowDay: function(date) {
-                var day = date.getDay();
-                for (i = 0; i < daysToDisable.length; i++) {
-                    if ($.inArray(day, daysToDisable) != -1) {
-                        return [false];
-                    }
-                }
-                return [true];
-            }
-        });
-    });
 })(jQuery);

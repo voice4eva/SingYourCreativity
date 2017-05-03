@@ -5,7 +5,7 @@ $fromEMAIL = "info@singyourcreativity.com";
 
 // NAME
 if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
+    $errorMSG = "Le nom est requis";
 } else {
     $name = $_POST["name"];
 }
@@ -16,7 +16,7 @@ $date = $_POST["date"];
 
 // EMAIL
 if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Email est requis";
 } else {
     $email = $_POST["email"];
 }
@@ -27,7 +27,7 @@ $phone = $_POST["phone"];
 
 // MESSAGE
 if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
+    $errorMSG .= "Un message est requis";
 } else {
     $message = $_POST["message"];
 }
@@ -61,7 +61,7 @@ if ($success && $errorMSG == ""){
    echo "success";
 }else{
     if($errorMSG == ""){
-        echo "Something went wrong :(";
+        echo "Quelque chose s'est mal passé :(";
     } else {
         echo $errorMSG;
     }
