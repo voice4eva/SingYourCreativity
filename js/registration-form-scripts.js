@@ -23,7 +23,7 @@
 
         $.ajax({
             type: "POST",
-            url: "../php/form-process.php",
+            url: "php/form-process.php",
             data: "message=" + message + "&name=" + name + "&date=" + date + "&email=" + email + "&phone=" + phone,
             success: function(text) {
                 if (text == "success") {
@@ -60,7 +60,7 @@
     function sendConfEmail(name, date, email, message, phone){
       $.ajax({
           type: "POST",
-          url: "../php/registration-conf-email.php",
+          url: "php/registration-conf-email.php",
           data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message + "&phone=" + phone
       });
     }

@@ -21,7 +21,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "../php/form-process-fr.php",
+        url: "fr/php/form-process-fr.php",
         data: "message=" + message + "&name=" + name + "&date=" + date + "&email=" + email + "&phone=" + phone,
         success : function(text){
             if (text == "passed"){
@@ -58,7 +58,7 @@ function submitMSG(valid, msg){
 function sendConfEmail(name, date, email, message, phone){
   $.ajax({
       type: "POST",
-      url: "../php/registration-conf-email-fr.php",
+      url: "fr/php/registration-conf-email-fr.php",
       data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message + "&phone=" + phone
   });
 }

@@ -21,7 +21,7 @@
 
         $.ajax({
             type: "POST",
-            url: "../php/form-process.php",
+            url: "php/form-process.php",
             data: "message=" + message + "&name=" + name + "&email=" + email + "&phone=" + phone,
             success: function(text) {
                 if (text == "success") {
@@ -58,7 +58,7 @@
     function sendConfEmail(message, name, email, phone){
       $.ajax({
           type: "POST",
-          url: "../php/contact-conf-email.php",
+          url: "php/contact-conf-email.php",
           data: "message=" + message + "&name=" + name + "&email=" + email + "&phone=" + phone
       });
     }
