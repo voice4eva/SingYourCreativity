@@ -1,4 +1,4 @@
-$("#contactForm").validator().on("submit", function (event) {
+$("#contactFormFR").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
@@ -35,12 +35,12 @@ function submitForm(){
 }
 
 function formSuccess(){
-    $("#contactForm")[0].reset();
+    $("#contactFormFR")[0].reset();
     submitMSG(true, "Merci. Nous avons envoyé une confirmation à votre adresse e-mail. (Vérifiez le dossier spam si vous ne le voyez pas dans votre boîte de réception)");
 }
 
 function formError(){
-    $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $("#contactFormFR").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $(this).removeClass();
     });
 }
