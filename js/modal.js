@@ -7,9 +7,18 @@ var span = document.getElementsByClassName("modal-close")[0];
 // reset iframe src to stop playing videos function
 function resetIframe() {
   $("#modalVideoTAL").children().attr('src','https://www.youtube.com/embed/Ii19TxBraQM');
+  $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
+  
   $("#modalVideoObjectives").children().attr('src','https://www.youtube.com/embed/sibICXCrtsM');
   $("#modalVideoStructure").children().attr('src','https://www.youtube.com/embed/F0_XxqxwDeY');
-  $("#modalVideoTALFR").children().attr('src','https://www.youtube.com/embed/oxHiN9g6RUM');
+  $("#modalVideoParticipants").children().attr('src','https://www.youtube.com/embed/j3qtw_4NI0U');
+  $("#modalVideoBenefits").children().attr('src','https://www.youtube.com/embed/SSv5ZdJYNdI');
+
+  $("#modalVideoObjectivesFR").children().attr('src','https://www.youtube.com/embed/hzFgSAM-GrA');
+  $("#modalVideoStructureFR").children().attr('src','https://www.youtube.com/embed/4g2ZXKYASQ8');
+  $("#modalVideoParticipantsFR").children().attr('src','https://www.youtube.com/embed/DwQpowXDboI');
+  $("#modalVideoBenefitsFR").children().attr('src','https://www.youtube.com/embed/R8F7I5FBBro');
+
   $("#modalVideoSYCSessionMontheyEN").children().attr('src','https://www.youtube.com/embed/H7ZWpCYm9kk');
   $("#modalVideoSYCSessionMorginsEN").children().attr('src','https://www.youtube.com/embed/7JIPQg8iBcM');
   $("#modalVideoSYCSessionMontheyFR").children().attr('src','https://www.youtube.com/embed/T-1ykui5Z3E');
