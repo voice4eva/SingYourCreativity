@@ -1,5 +1,10 @@
 <?php
 
+/*
+  AUTHOR: SYLVESTER KLIROWSKI
+  GITHUB: https://github.com/voice4eva/
+*/
+
 $errorMSG = "";
 $fromEMAIL = "info@singyourcreativity.com";
 

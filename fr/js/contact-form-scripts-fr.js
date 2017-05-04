@@ -1,3 +1,8 @@
+/*
+	AUTHOR: SYLVESTER KLIROWSKI
+	GITHUB: https://github.com/voice4eva/
+*/
+
 $("#contactFormFR").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...

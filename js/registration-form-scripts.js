@@ -1,3 +1,8 @@
+/*
+	AUTHOR: SYLVESTER KLIROWSKI
+	GITHUB: https://github.com/voice4eva/
+*/
+
 (function($) {
     // validate form entries
     $("#eventRegForm").validator().on("submit", function(event) {

@@ -1,5 +1,10 @@
 <?php
 
+  /*
+    AUTHOR: SYLVESTER KLIROWSKI
+  	GITHUB: https://github.com/voice4eva/
+  */
+
  // fields
  $name = $_POST["name"];
  $email = $_POST["email"];

@@ -1,3 +1,8 @@
+/*
+	AUTHOR: SYLVESTER KLIROWSKI
+	GITHUB: https://github.com/voice4eva/
+*/
+
 $(document).ready(function(){
 	// select all divs with show-more
 	$('.show-more').each(function(event){
