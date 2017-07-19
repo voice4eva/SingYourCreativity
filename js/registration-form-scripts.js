@@ -73,7 +73,7 @@
     /* Datepicker */
     $(function() {
 
-        var daysToDisable = [0, 1, 2, 4, 5, 6, 7];
+        var daysToDisable = [0, 2, 3, 4, 5, 6, 7];
 
         $("#datepicker").datepicker({
             beforeShowDay: function(date) {
