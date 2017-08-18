@@ -37,7 +37,7 @@ ol, ul {
 
 /*Sub-Pages Font*/
 .sub-pages h1, .sub-pages h2, .sub-pages h3 {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  /*font-family: 'Comic Sans MS', cursive, sans-serif;*/
   text-transform: none;
 
 }

@@ -15,7 +15,7 @@
 
  // change message text to a more human-friendly name
  if($event == "ChanterBienEtre"){
-   $event = "Chanter pour son bien-etre";
+   $event = "Chanter ensemble pour son bien-être";
  } elseif ($event == "ChanteTherap") {
    $event = "Cours individuels / Chant thérapeutique";
  }
