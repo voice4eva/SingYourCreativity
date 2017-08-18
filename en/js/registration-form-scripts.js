@@ -25,12 +25,12 @@
         // var date = $("#datepicker").val();
         var email = $("#email").val();
         var phone = $("#phone").val();
-        var eventName = $("#event").val();
+        var eventName = $("#eventName").val();
 
         $.ajax({
             type: "POST",
             url: "php/form-process.php",
-            data: "event=" + eventName + "&name=" + name + + "&email=" + email + "&phone=" + phone + "&message=" + message,
+            data: "event=" + eventName + "&name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message,
             success: function(text) {
                 if (text == "success") {
                     formSuccess();
@@ -67,7 +67,7 @@
       $.ajax({
           type: "POST",
           url: "php/registration-conf-email.php",
-          data: "event=" + eventName + "&name=" + name + + "&email=" + email + "&phone=" + phone + "&message=" + message
+          data: "event=" + eventName + "&name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message
       });
     }
 

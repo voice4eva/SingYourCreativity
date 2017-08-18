@@ -22,12 +22,12 @@ function submitForm(){
     // var date = $("#datepicker").val();
     var email = $("#email").val();
     var phone = $("#phone").val();
-    var eventName = $("#event").val();
+    var eventName = $("#eventName").val();
 
     $.ajax({
         type: "POST",
         url: "php/form-process-fr.php",
-        data: "event=" + eventName + "&name=" + name + + "&email=" + email + "&phone=" + phone + "&message=" + message,
+        data: "event=" + eventName + "&name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message,
         success : function(text){
             if (text == "passed"){
                 formSuccess();
@@ -64,7 +64,7 @@ function sendConfEmail(eventName, name, email, phone, message){
   $.ajax({
       type: "POST",
       url: "php/registration-conf-email-fr.php",
-      data: "event=" + eventName + "&name=" + name + + "&email=" + email + "&phone=" + phone + "&message=" + message
+      data: "event=" + eventName + "&name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message
   });
 }
 
