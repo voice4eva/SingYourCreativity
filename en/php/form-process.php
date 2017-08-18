@@ -18,7 +18,7 @@ if (empty($_POST["name"])) {
 // DATE
 // $date = $_POST["date"];
 
-// DATE
+// EVENT
 $event = $_POST["event"];
 
 // EMAIL
