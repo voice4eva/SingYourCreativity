@@ -12,24 +12,24 @@
     <title>Sing Your Creativity</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../css/animate.css" type="text/css">
 
     <!-- Creative CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="../css/creative.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="../css/custom.css" type="text/css">
 
     <!-- Site Icon-->
-    <link rel="icon" type="image/png" href="img/logos/SYC-logo.png"/>
+    <link rel="icon" type="image/png" href="../img/logos/SYC-logo.png"/>
 
 </head>
 
@@ -45,36 +45,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html#page-top"><span><img src="img/logos/SYC-logo-white.png" alt="SYC Logo" style="width:35px;height:35px;"></span>&nbsp;Sing Your Creativity</a>
+                <a class="navbar-brand page-scroll" href="index.html#page-top"><span><img src="../img/logos/SYC-logo-white.png" alt="SYC Logo" style="width:35px;height:35px;"></span>&nbsp;Sing Your Creativity</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="enFrLink">EN/FR</i><span class="caret"></span></a>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</i><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">English</a></li>
-                            <li><a href="fr/a-propos-de-nous.html">Français</a></li>
+                            <li><a href="index.html#teambuilding">Teambuilding</a></li>
+                            <li><a href="../fr/chanttherapeutique.html">Individual Therapeutic Singing (in French)</a></li>
+                            <li><a href="workshop.html">Workshop</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us</i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#mission">Our Mission</a></li>
+                            <li><a href="about.html#team">Team</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a class="page-scroll" href="index.html#services">Services</a>
+                        <a href="register.html">Register</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="index.html#portfolio">Learn More</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#page-top">About Us</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="media.html">Media</a>
+                        <a href="../fr/chanttherapeutique.html"><img src="../img/icons/lang_fr.png" alt="FR"></a>
                     </li>
                 </ul>
             </div>
@@ -93,7 +92,7 @@
                 <!-- About Eva Klirowska -->
                 <div class="hidden" id="modalTeamMem_Eva">
                     <div>
-                        <img src="img/team/eva_klirowska_small.jpg" class="img-responsive img-modal" alt="Eva Klirowska">
+                        <img src="../img/team/eva_klirowska_small.jpg" class="img-responsive img-modal" alt="Eva Klirowska">
                     </div>
                     <div class="text-center">
                         <strong>"I believe that making music – and especially singing because the musical instrument we use is our own body – is the most fun, healthy, effective and easy method to connect with ourselves and people around us. It releases stress and unlocks our natural potential to think creatively. My mission is to share my passion and my experience with the participants of SYC workshops!" ~ Eva Klirowska</strong>
@@ -152,7 +151,7 @@
                 <!-- About Olivier Gallen -->
                 <div class="hidden" id="modalTeamMem_Olivier">
                     <div>
-                        <img src="img/team/olivier_gallen_small.jpg" class="img-responsive img-modal" alt="Olivier Gallen">
+                        <img src="../img/team/olivier_gallen_small.jpg" class="img-responsive img-modal" alt="Olivier Gallen">
                     </div>
                     <div class="text-center">
                         <strong>"Each time I review videos made for Sing Your Creativity, I'm amazed at how people get involved and work together with such positive energy although they seldom know one another! It really has a powerful impact on teams." ~ Olivier Gallen</strong>
@@ -173,7 +172,7 @@
                 <!-- About Sylvester Klirowski -->
                 <div class="hidden" id="modalTeamMem_Sylvester">
                     <div>
-                        <img src="img/team/sylvester_klirowski_small.jpg" class="img-responsive img-modal" alt="Sylvester Klirowski">
+                        <img src="../img/team/sylvester_klirowski_small.jpg" class="img-responsive img-modal" alt="Sylvester Klirowski">
                     </div>
                     <div class="text-center">
                         <strong>"Having spent ample time in numerous groups and corporate settings, I've come to understand the importance of team-building seminars. SYC provides a very unique experience in that it brings music into the mix." ~ Sylvester Klirowski</strong>
@@ -194,7 +193,7 @@
                 <!-- About Marlena Wisniak -->
                 <div class="hidden" id="modalTeamMem_Marlena">
                     <div>
-                        <img src="img/team/marlena_wisniak_small.jpg" class="img-responsive img-modal" alt="Marlena Wisniak">
+                        <img src="../img/team/marlena_wisniak_small.jpg" class="img-responsive img-modal" alt="Marlena Wisniak">
                     </div>
                     <div class="text-center">
                         <strong>"Lawyer by day and dancer by night, I trade my work clothes for dance gear every day. As such, I strongly believe that art and music not only allows us to stay balanced, but also brings the best out of us. This is what SYC does so well - it enables everyone to connect with their inner Artist, and is perfectly adapted for our work environment." ~ Marlena Wisniak</strong>
@@ -236,7 +235,7 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-3 col-sm-3 portfolio-box" id="teamMem_Eva">
-                    <img src="img/team/eva_klirowska.jpg" class="img-responsive" alt="Eva Klirowska">
+                    <img src="../img/team/eva_klirowska.jpg" class="img-responsive" alt="Eva Klirowska">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -250,7 +249,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-3 portfolio-box" id="teamMem_Olivier">
-                    <img src="img/team/olivier_gallen.jpg" class="img-responsive" alt="Olivier Gallen">
+                    <img src="../img/team/olivier_gallen.jpg" class="img-responsive" alt="Olivier Gallen">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -264,7 +263,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-3 portfolio-box" id="teamMem_Sylvester">
-                    <img src="img/team/sylvester_klirowski.jpg" class="img-responsive" alt="Sylvester Klirowski">
+                    <img src="../img/team/sylvester_klirowski.jpg" class="img-responsive" alt="Sylvester Klirowski">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -278,7 +277,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-3 portfolio-box" id="teamMem_Marlena">
-                    <img src="img/team/marlena_wisniak.jpg" class="img-responsive" alt="Marlena Wisniak">
+                    <img src="../img/team/marlena_wisniak.jpg" class="img-responsive" alt="Marlena Wisniak">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category text-faded">
@@ -309,27 +308,27 @@
         </div>
     </footer>
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/jquery.fittext.js"></script>
+    <script src="../js/wow.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    <script src="../js/creative.js"></script>
 
     <!-- Validator JavaScript -->
-    <script src="js/validator.min.js"></script>
+    <script src="../js/validator.min.js"></script>
 
     <!-- Custom Modal -->
-    <script src="js/modal.js"></script>
+    <script src="../js/modal.js"></script>
 
     <!-- Random Onload scripts -->
-    <script src="js/randomOnload.js"></script>
+    <script src="../js/randomOnload.js"></script>
 
 </body>
 

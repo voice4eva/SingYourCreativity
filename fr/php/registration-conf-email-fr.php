@@ -10,11 +10,14 @@
  $email = $_POST["email"];
  $phone = $_POST["phone"];
  $message = $_POST["message"];
- $date = $_POST["date"];
+ $event = $_POST["event"];
+ // $date = $_POST["date"];
 
  // change message text to a more human-friendly name
- if($message == "ChanterBienEtre"){
-   $message = "Chanter pour son bien-etre";
+ if($event == "ChanterBienEtre"){
+   $event = "Chanter pour son bien-etre";
+ } elseif ($event == "ChanteTherap") {
+   $event = "Cours individuels / Chant thérapeutique";
  }
 
  // email subject
@@ -27,9 +30,9 @@
  <p>Merci pour votre inscription à l'événement Sing Your Creativity.</p>
  <p><strong>Votre confirmation d'inscription</strong>
      <br />Nom de l'événement: ";
- $body .= $message;
- $body .= "<br />Date de l'événement: ";
- $body .= $date;
+ $body .= $event;
+ // $body .= "<br />Date de l'événement: ";
+ // $body .= $date;
  $body .= "<br />Email: ";
  $body .= $email;
  $body .= "<br />Téléphone: ";

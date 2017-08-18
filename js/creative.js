@@ -24,9 +24,9 @@
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
-      // don't close if choosing languages
-      var id = this.id;
-      if(id == 'enFrLink'){return;}
+      // don't close dropdown menu (need this for when in mobile mode)
+      var className = this.className;
+      if(className == 'dropdown-toggle'){return;}
       else{
         $('.navbar-toggle:visible').click();}
     });

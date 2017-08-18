@@ -10,11 +10,14 @@
  $email = $_POST["email"];
  $phone = $_POST["phone"];
  $message = $_POST["message"];
- $date = $_POST["date"];
+ // $date = $_POST["date"];
+ $event = $_POST["event"];
 
  // change message text to a more human-friendly name
- if($message == "SingWellBeing"){
-   $message = "Singing for Your Well Being";
+ if($event == "SingWellBeing"){
+   $event = "Singing for Your Well Being";
+ } elseif ($event == "TherapSing") {
+   $event = "Individual Therapeutic Singing";
  }
 
  // email subject
@@ -27,9 +30,9 @@
  <p>Thank you for registering for a Sing Your Creativity event.</p>
  <p><strong>Your Registration Confirmation</strong>
      <br />Event Name: ";
- $body .= $message;
- $body .= "<br />Event Date: ";
- $body .= $date;
+ $body .= $event;
+ // $body .= "<br />Event Date: ";
+ // $body .= $date;
  $body .= "<br />Email: ";
  $body .= $email;
  $body .= "<br />Phone: ";

@@ -16,8 +16,10 @@ if (empty($_POST["name"])) {
 }
 
 // DATE
-$date = $_POST["date"];
+// $date = $_POST["date"];
 
+// DATE
+$event = $_POST["event"];
 
 // EMAIL
 if (empty($_POST["email"])) {
@@ -45,8 +47,10 @@ $Body = "";
 $Body .= "Name: ";
 $Body .= $name;
 $Body .= "\n";
-$Body .= "Date: ";
-$Body .= $date;
+// $Body .= "Date: ";
+// $Body .= $date;
+$Body .= "Event: ";
+$Body .= $event;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;

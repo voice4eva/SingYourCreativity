@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top" class="sticky-footer-body">
+<body id="page-top">
     <nav id="mainNav" class="navbar navbar-primary navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,7 +57,7 @@
                             <li><a href="index.html#teambuilding">Teambuilding</a></li>
                             <li><a href="chanttherapeutique.html">Cours individuels / Chant thérapeutique</a></li>
                             <li><a href="atelier.html">Atelier de chant collectif</a></li>
-                            <li><a href="#">Événements</a></li>
+                            <li><a href="evenements.html">Événements</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -70,10 +70,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="inscription.html">Inscription</a>
+                        <a href="#">Inscription</a>
                     </li>
                     <li>
-                        <a href="../en/events.html"><img src="../img/icons/lang_en.png" alt="EN"></a>
+                        <a href="../en/register.html"><img src="../img/icons/lang_en.png" alt="EN"></a>
                     </li>
                 </ul>
             </div>
@@ -81,36 +81,83 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <section id="events" class="sticky-footer-content">
+    <section id="events">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading text-primary" style="text-transform: uppercase;">Évènements à venir</h2>
-                    <hr>
+                  <h2 class="section-heading">Inscription</h2>
+                  <hr class="primary">
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="SYCEvent_regWeekend_form">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-left">
-                    <div>
-                        <img src="../img/events/around_the_piano.jpg" class="img-responsive img-rounded pull-left" alt="Singing for well being" style="">
+                <form role="form" id="eventRegFormFR" data-toggle="validator" class="form-horizontal shake">
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Événement</label>
+                        <div class="col-sm-10">
+                            <select id="event" name="event" form="eventRegFormFR" class="form-control" placeholder="Les week-ends bien-être avec Sing Your Creativity" required data-error="Entrez votre événement souhaitée s'il vous plaît.">
+                              <option disabled selected value> -- choisir une option -- </option>
+                              <option value="ChanterBienEtre">Chanter pour son bien-etre</option>
+                              <option value="ChanteTherap">Cours individuels / Chant thérapeutique</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="text-primary"><i>Chanter pour son bien-etre</i></h4>
-                        <p>
-                            Offrez à votre corps une séance d'entraînement à travers le chant et le mouvement afin d’améliorer votre santé physique et psychologique. <strong>Chanter pour son bien-être</strong> est un atelier qui favorise la reconnexion avec soi-même et avec les autres.<br>
-                            <a href="atelier.html">Cliquez pour apprendre plus ...</a>
-                        </p>
-                  </div>
-                </div>
+                    <!-- <div class="form-group" id="dateDiv">
+                        <label for="datepicker" class="col-sm-2 control-label">Date</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="datepicker" placeholder="Date" required data-error="Entrez votre date souhaitée s'il vous plaît.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Nom complet</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nom et prénom" required data-error="Entrez votre nom complet s'il vous plaît.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="exemple@domain.com" required data-error="Entrez votre adresse e-mail s'il vous plaît.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">Téléphone</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="phone" class="form-control" id="phone" placeholder="+41223334444" required data-error="Entrez votre numéro s'il vous plaît.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="message" class="col-sm-2 control-label">Message</label>
+                      <div class="col-sm-10">
+                        <textarea id="message" class="form-control" rows="4" placeholder="Entrez votre message"></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- for human check, set value to 5 to match against, keep hidden -->
+                        <input type="text" class="hidden" id="numbermatch" value="5">
+                        <label for="humancheck" class="col-sm-2 control-label">1 + 4 = ?</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="humancheck" placeholder="Votre réponse" required data-match="#numbermatch" data-error="Entrez un numéro s'il vous plaît." data-match-error="Vérifiez vos calculs :)">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input id="form-submit" type="submit" value="Envoyer" class="btn btn-primary">
+                        </div>
+                    </div>
+                    <div id="msgSubmit" class="hidden"></div>
+                    <div class="clearfix"></div>
+                </form>
             </div>
-          </div>
-          <div class="container">
-            <div class="jumbotron">
-              <a href="inscription.html" class="btn btn-primary">Inscription</a>
-            </div>
-          </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -145,12 +192,19 @@
     <!-- Validator JavaScript -->
     <script src="../js/validator.min.js"></script>
 
+    <!-- Contact Submit JavaScript -->
+    <script src="js/registration-form-scripts-fr.js"></script>
+
     <!-- Show more text function -->
     <script src="../js/showText.js"></script>
+
+    <!-- Datapicker localization (French)
+    <script src="js/datepicker-fr.js"></script> -->
 
     <!-- Random Onload scripts -->
     <script src="../js/randomOnload.js"></script>
 
 
 </body>
+
 </html>

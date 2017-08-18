@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sing Your Creativity registration page">
+    <meta name="author" content="Sylvester Klirowski">
+
+    <title>Sing Your Creativity</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../css/animate.css" type="text/css">
+
+    <!-- Creative CSS -->
+    <link rel="stylesheet" href="../css/creative.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css" type="text/css">
+
+    <!-- Site Icon-->
+    <link rel="icon" type="image/png" href="../img/logos/SYC-logo.png" />
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-primary navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed alternate" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html#page-top"><span><img src="../img/logos/SYC-logo-white.png" alt="SYC Logo" style="width:35px;height:35px;"></span>&nbsp;Sing Your Creativity</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html#teambuilding">Teambuilding</a></li>
+                            <li><a href="../fr/chanttherapeutique.html">Individual Therapeutic Singing (in French)</a></li>
+                            <li><a href="workshop.html">Workshop</a></li>
+                            <li><a href="events.html">Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us</i><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#mission">Our Mission</a></li>
+                            <li><a href="about.html#team">Team</a></li>
+                            <li><a href="media.html">Media</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Register</a>
+                    </li>
+                    <li>
+                        <a href="../fr/inscription.html"><img src="../img/icons/lang_fr.png" alt="FR"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="events">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="section-heading">Register</h2>
+                  <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container" id="SYCEvent_regWeekend_form">
+            <div class="row">
+                <form role="form" id="eventRegForm" data-toggle="validator" class="form-horizontal shake">
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Desired Event</label>
+                        <div class="col-sm-10">
+                            <select id="event" name="event" form="eventRegForm" class="form-control" placeholder="SYC Regenerating Weekends" required data-error="Please enter your desired event.">
+                              <option disabled selected value> -- select an option -- </option>
+                              <option value="SingWellBeing">Singing for Your Well Being</option>
+                              <option value="TherapSing">Individual Therapeutic Singing</option>
+                            </select>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="form-group" id="dateDiv">
+                        <label for="datepicker" class="col-sm-2 control-label">Date</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="datepicker" placeholder="Date" required data-error="Please enter desired date.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" required data-error="Please enter your name.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="example@domain.com" required data-error="Please enter your email address.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">Phone</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="phone" class="form-control" id="phone" placeholder="+41223334444" required data-error="Please enter your phone number.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="message" class="col-sm-2 control-label">Message</label>
+                      <div class="col-sm-10">
+                        <textarea id="message" class="form-control" rows="4" placeholder="Enter your message" required data-error="Please enter your message."></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- for human check, set value to 5 to match against, keep hidden -->
+                        <input type="text" class="hidden" id="numbermatch" value="5">
+                        <label for="humancheck" class="col-sm-2 control-label">1 + 4 = ?</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="humancheck" placeholder="Your Answer" required data-match="#numbermatch" data-error="Please enter a number." data-match-error="Check your math :)">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <input id="form-submit" type="submit" value="Send" class="btn btn-primary">
+                        </div>
+                    </div>
+                    <div id="msgSubmit" class="hidden"></div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-text pull-left">
+                  <p id="copyright"></p>
+                </div>
+                <div class="navbar-text pull-right">
+                    <a href="https://www.facebook.com/singyourcreativity/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/sing-your-creativity/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/jquery.fittext.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../js/creative.js"></script>
+
+    <!-- Validator JavaScript -->
+    <script src="../js/validator.min.js"></script>
+
+    <!-- Contact Submit JavaScript -->
+    <script src="js/registration-form-scripts.js"></script>
+
+    <!-- Show more text function -->
+    <script src="../js/showText.js"></script>
+
+    <!-- Random Onload scripts -->
+    <script src="../js/randomOnload.js"></script>
+
+</body>
+
+</html>

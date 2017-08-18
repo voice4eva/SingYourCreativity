@@ -19,6 +19,9 @@ if (empty($_POST["name"])) {
 $date = $_POST["date"];
 
 
+// EVENT
+$event = $_POST["event"];
+
 // EMAIL
 if (empty($_POST["email"])) {
     $errorMSG .= "Email est requis";
@@ -45,8 +48,10 @@ $Body = "";
 $Body .= "Name: ";
 $Body .= $name;
 $Body .= "\n";
-$Body .= "Date: ";
-$Body .= $date;
+// $Body .= "Date: ";
+// $Body .= $date;
+$Body .= "Event: ";
+$Body .= $event;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;

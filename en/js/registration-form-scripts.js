@@ -22,18 +22,19 @@
         // Initiate Variables With Form Content
         var message = $("#message").val();
         var name = $("#name").val();
-        var date = $("#datepicker").val();
+        // var date = $("#datepicker").val();
         var email = $("#email").val();
         var phone = $("#phone").val();
+        var eventName = $("#event").val();
 
         $.ajax({
             type: "POST",
             url: "php/form-process.php",
-            data: "message=" + message + "&name=" + name + "&date=" + date + "&email=" + email + "&phone=" + phone,
+            data: "&event=" + eventName + "&name=" + name + + "&email=" + email + "&phone=" + phone + "message=" + message,
             success: function(text) {
                 if (text == "success") {
                     formSuccess();
-                    sendConfEmail(name, date, email, message, phone);
+                    sendConfEmail(eventName, name, email, phone, message);
                 } else {
                     formError();
                     submitMSG(false, text);
@@ -62,15 +63,15 @@
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
 
-    function sendConfEmail(name, date, email, message, phone){
+    function sendConfEmail(eventName, name, email, phone, message){
       $.ajax({
           type: "POST",
           url: "php/registration-conf-email.php",
-          data: "name=" + name + "&date=" + date + "&email=" + email + "&message=" + message + "&phone=" + phone
+          data: "&event=" + eventName + "&name=" + name + + "&email=" + email + "&phone=" + phone + "message=" + message
       });
     }
 
-    /* Datepicker */
+    /* Datepicker -- THIS IS NOT BEING USED AT THE MOMENT */
     $(function() {
 
         var daysToDisable = [0, 2, 3, 4, 5, 6, 7];

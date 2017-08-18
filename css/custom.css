@@ -25,6 +25,28 @@ ol, ul {
     list-style-type: none;
 }
 
+/* Sticky Footer */
+.sticky-footer-body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.sticky-footer-content {
+  flex: 1;
+}
+
+/*Sub-Pages Font*/
+.sub-pages h1, .sub-pages h2, .sub-pages h3 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-transform: none;
+
+}
+.sub-pages h1 {
+  color: #f05f40;
+  display: inline !important;
+  font-size: 50px;
+}
+
 /* set position for small images */
 
 img.img-responsive.img-modal {
@@ -43,6 +65,12 @@ img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background:transparent !important;
+  text-align: center;
 }
 
 /* modal box */
