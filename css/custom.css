@@ -25,6 +25,14 @@ ol, ul {
     list-style-type: none;
 }
 
+figcaption {
+    padding-top: 5px;
+}
+
+audio {
+    width:100%;
+}
+
 /* Sticky Footer */
 .sticky-footer-body {
   display: flex;
@@ -46,6 +54,12 @@ ol, ul {
   display: inline !important;
   font-size: 50px;
 }
+
+.sub-pages h2 {
+    color: #f05f40;
+    display: inline !important;
+    font-size: 40px;
+  }
 
 /* set position for small images */
 
