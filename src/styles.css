@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.logo-inline {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.hero {
+  min-height: 70vh;
+  background-image: url("../img/header.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.nav-simple {
+  display: flex;
+  gap: 10px;
+}
+
+#benefits,
+#testimonials,
+#other-lessons {
+  padding: 80px 0;
+}

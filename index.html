@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sing Your Creativity</title>
+  <script>
+    (function redirectByLanguage() {
+      var isFrench = navigator.language && navigator.language.toLowerCase().indexOf("fr") === 0;
+      window.location.replace(isFrench ? "/fr/index.html" : "/en/index.html");
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+  <p><a href="/en/index.html">English</a> | <a href="/fr/index.html">Français</a></p>
+</body>
+</html>
